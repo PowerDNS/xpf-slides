@@ -61,7 +61,7 @@
 % No nav symbols on the PDF
 \beamertemplatenavigationsymbolsempty
 
-\title[aname]{xpf: DNS X-Proxied-For (draft-bellis-dnsop-xpf-02)}
+\title[aname]{xpf: DNS X-Proxied-For (draft-bellis-dnsop-xpf-04)}
 \author{\textbf{Peter van Dijk}\\Senior PowerDNS Engineer\\with Ray Bellis and Rémi Gacogne}
 \date{}
 \titlegraphic{
@@ -126,28 +126,31 @@
   }
 \end{frame}
 
-\begin{frame}{for reference, clientid}
-  \center{
-    \includegraphics[width=.95\textwidth]{img/Canvas8.png}
-  }
-\end{frame}
-
 \begin{frame}{Record format}
   \center{
     \includegraphics[width=.95\textwidth]{img/record.png}
   }
 \end{frame}
 
-\begin{frame}{Next steps}
+\begin{frame}{Privacy concerns}
   \begin{itemize}
-    \item adoption?
-    \item get some running code
-    \item ...
+    \item explicit configuration
+    \item otherwise, REFUSED response
+    \item so no accidental leaking
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Running code}
+  \begin{itemize}
+    \item dnsdist 
+    \item PowerDNS Recursor
+    \item Wireshark
+    \item tcpdump
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Questions?}
-Questions? Comments?
+Questions? Comments? Adoption?
 
 \end{frame}
 
